@@ -29,6 +29,9 @@ public class AreaOfCircle {
         System.out.println(area);
     }
 }
+
+
+
 ## Example 2 :
 package com.surya;
 public class Printer {
@@ -57,24 +60,29 @@ public class Printer {
 
 }
 
-What are static blocks?
-Static Blocks or Static Initializers in Java
-three ways to initialize static variables in Java:
-1.	At the Time of Declaration: Static variables can be initialized directly at the time of their declaration. This is the simplest and most straightforward method.
-private static int count = 10;
-2.	Using a Static Block: A static block (or static initializer) is used to initialize static variables when more complex initialization or setup is needed. The static block is executed once when the class is loaded into memory.
-static {
-    count = 10;
-}
-3.	Using a Static Method: A static method can be used to initialize static variables. This approach provides more flexibility, allowing additional logic or conditions to be applied during initialization.
-public static void initialize() {
-    count = 10;
-}
+What are static blocks or Static Initializers in Java ?
+
 
 In Java, static blocks or static initializers are special code blocks used to initialize static fields or perform logic that needs to be executed once when the class is loaded into memory.
 
 
 
+There are three ways to initialize static variables in Java:
+1.	At the Time of Declaration: Static variables can be initialized directly at the time of their declaration. This is the simplest and most straightforward method.
+
+private static int count = 10;
+
+2.	Using a Static Block: A static block (or static initializer) is used to initialize static variables when more complex initialization or setup is needed. The static block is executed once when the class is loaded into memory.
+
+static {
+    count = 10;
+}
+
+3.	Using a Static Method: A static method can be used to initialize static variables. This approach provides more flexibility, allowing additional logic or conditions to be applied during initialization.
+
+public static void initialize() {
+    count = 10;
+}
 
 
 
